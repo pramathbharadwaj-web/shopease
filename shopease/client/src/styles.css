@@ -1,0 +1,44 @@
+:root {
+  --brand: #4f46e5;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+}
+
+body { margin: 0; background: #f9fafb; }
+main { max-width: 1040px; margin: 0 auto; padding: 24px; }
+button { cursor: pointer; border: 0; border-radius: 6px; padding: 8px 14px; background: var(--brand); color: #fff; }
+button:disabled { background: #c7c7d1; cursor: not-allowed; }
+button.link { background: none; color: var(--brand); padding: 0; }
+input, select { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; }
+
+.header { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #fff; border-bottom: 1px solid var(--border); }
+.logo { font-size: 1.4rem; color: var(--brand); cursor: pointer; margin: 0; }
+.header nav { display: flex; gap: 16px; align-items: center; }
+.badge { background: #ef4444; border-radius: 999px; padding: 0 7px; margin-left: 4px; font-size: 0.8rem; }
+
+.toolbar { display: flex; gap: 12px; margin-bottom: 20px; align-items: center; }
+.toolbar input[type='search'] { flex: 1; }
+.checkbox { display: flex; gap: 6px; align-items: center; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+.card h3 { margin: 0; font-size: 1rem; }
+.card-category { text-transform: uppercase; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
+.price { font-weight: 700; font-size: 1.1rem; }
+.rating { color: #f59e0b; font-size: 0.9rem; }
+.stock-warning { color: #dc2626; font-size: 0.8rem; }
+
+.cart ul { list-style: none; padding: 0; }
+.cart-line { display: grid; grid-template-columns: 1fr 70px 90px 70px; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.coupon { display: flex; gap: 8px; margin: 16px 0; }
+.totals { display: grid; grid-template-columns: 1fr auto; gap: 6px; max-width: 320px; margin-left: auto; }
+.totals dd { margin: 0; text-align: right; }
+.totals .total { font-weight: 700; }
+
+.checkout, .login-form { display: flex; flex-direction: column; gap: 10px; max-width: 380px; }
+.login-form { margin: 10vh auto; background: #fff; padding: 32px; border-radius: 12px; border: 1px solid var(--border); }
+.alert { background: #fee2e2; color: #991b1b; padding: 10px 14px; border-radius: 6px; margin: 12px 24px; }
+.muted { color: var(--muted); }

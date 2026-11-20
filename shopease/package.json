@@ -1,0 +1,16 @@
+{
+  "name": "shopease",
+  "version": "1.4.0",
+  "private": true,
+  "description": "ShopEase — a lightweight e-commerce storefront (React + Express)",
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "start": "npm start -w server",
+    "build": "npm run build -w client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "license": "MIT"
+}
